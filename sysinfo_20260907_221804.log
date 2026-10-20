@@ -1,0 +1,28 @@
+=== Reporte generado el Mon  7 Sep 22:18:04 CST 2026 ===
+--- Sistema ---
+Linux rpi-cuellar 6.18.34+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.18.34-1+rpt1 (2026-06-09) aarch64 GNU/Linux
+--- CPU ---
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A53
+Model:                                   4
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+--- Memoria ---
+               total        used        free      shared  buff/cache   available
+Mem:           905Mi       254Mi       177Mi       8.2Mi       544Mi       650Mi
+Swap:          904Mi        37Mi       867Mi
+--- Disco ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2   14G  6.1G  7.2G  46% /
+--- Procesos ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+embebid+   27274  500  0.4   9244  3856 pts/0    R+   22:18   0:00 ps aux --sort=-%cpu
+embebid+    1399  1.6  5.3 663680 49336 ?        Sl   21:44   0:33 pcmanfm --desktop
+embebid+    1397  1.6  6.0 853516 55960 ?        Sl   21:44   0:32 /usr/bin/wf-panel-pi
+root           1  1.2  1.5  25564 14136 ?        Ss   21:44   0:25 /sbin/init splash
+root          62  1.2  0.0      0     0 ?        I<   21:44   0:24 [kworker/u17:0-brcmf_wq/mmc1:0001:1]

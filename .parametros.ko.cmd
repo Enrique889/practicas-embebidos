@@ -1,0 +1,1 @@
+savedcmd_parametros.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /usr/src/linux-headers-6.18.39+rpt-rpi-v8/arch/arm64/module.lds -o parametros.ko parametros.o parametros.mod.o .module-common.o

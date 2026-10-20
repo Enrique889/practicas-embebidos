@@ -1,0 +1,20 @@
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgpiod.so.3", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/dev/gpiochip4", O_RDWR|O_CLOEXEC) = 3
+ioctl(3, GPIO_GET_CHIPINFO_IOCTL, {name="gpiochip0", label="pinctrl-bcm2835", lines=54}) = 0
+ioctl(3, GPIO_V2_GET_LINE_IOCTL, {num_lines=1, offsets=[17], consumer="sensor_combinado", config={flags=GPIO_V2_LINE_FLAG_OUTPUT, num_attrs=1, attrs=[{values=0, mask=0x1}]}} => {fd=4}) = 0
+openat(AT_FDCWD, "/dev/i2c-1", O_RDWR)  = 5
+ioctl(5, _IOC(_IOC_NONE, 0x7, 0x3, 0), 0x76) = 0
+openat(AT_FDCWD, "/dev/spidev0.0", O_RDWR) = 6
+ioctl(6, SPI_IOC_WR_MODE, 0x7ffb9bf9f7) = 0
+ioctl(6, SPI_IOC_WR_BITS_PER_WORD, 0x7ffb9bf9f6) = 0
+ioctl(6, SPI_IOC_WR_MAX_SPEED_HZ, 0x7ffb9bf9f0) = 0
+ioctl(6, SPI_IOC_MESSAGE(32), 0x7ffb9bf9b8) = 3
+ioctl(4, GPIO_V2_LINE_SET_VALUES_IOCTL, {bits=0, mask=0x1}) = 0
+ioctl(6, SPI_IOC_MESSAGE(32), 0x7ffb9bf9b8) = 3
+ioctl(4, GPIO_V2_LINE_SET_VALUES_IOCTL, {bits=0, mask=0x1}) = 0
+ioctl(6, SPI_IOC_MESSAGE(32), 0x7ffb9bf9b8) = 3
+ioctl(4, GPIO_V2_LINE_SET_VALUES_IOCTL, {bits=0, mask=0x1}) = 0
+--- SIGTERM {si_signo=SIGTERM, si_code=SI_USER, si_pid=3000, si_uid=1000} ---
++++ killed by SIGTERM +++
